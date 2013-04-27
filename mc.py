@@ -28,7 +28,7 @@ class Server:
   #Initialize the object
   def __init__(self):
     #Instance variables
-    self.startupScript = '/home/tiberiusgeek/craftbukkit/craftbukkit.sh'
+    self.startupScript = os.expanduser('~') + '/craftbukkit/craftbukkit.sh'
    
     #Check the server status. If it is already running, resume it, if not, start it up.
     if self.status():
